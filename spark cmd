@@ -1,0 +1,5 @@
+spark-shell
+val a = spark.read.csv("C:/DS Data/Employee.csv")
+a.show()
+
+a.select($"_c1"+1)
