@@ -1,0 +1,34 @@
+import pandas as pd
+import numpy as np
+from scipy import stats
+
+#load the dataset
+data = pd.read_csv('data.csv')
+data.head()
+
+# extract two variables
+x = data['tcs']
+y= data['wipro']
+
+c = stats.pearsonr(x,y)[0]
+if c>0.7:
+  print('Positive Coorelation')
+elif c<0.4:
+  print('Morderate Coorelation')
+elif c>0:
+  print('Weak Coorelation')
+elif c<0 and c>-0.4:
+  print('negative Coorelation')
+elif c< -0.7:
+  print('strong negative Coorelation')
+else:
+  print("No Coorelation")
+
+#perforn single linear reggeration
+
+model = stats.linregress(x,y)
+slope = model.slope
+intercept = model.intercept
+
+pred_y = slope*x + intercept
+print(pred_y)
