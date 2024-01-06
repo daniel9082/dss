@@ -9,6 +9,8 @@ set up environmetal variables as
 SPARK_HOME spark path before bin
 HADOOP_HOME hadoop path before bin
 
+sysdm.cpl
+
 go to lower section of the encironmeral variables
 click on path write %HADOOP_HOME%\bin 
 now create same as hadoop
