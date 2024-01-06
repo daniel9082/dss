@@ -1,0 +1,34 @@
+from scipy.stats import ttest_1samp
+import numpy as np
+print ("\nMitali Vishwekar 41\n")
+age = [45,89,23,46,12,69,45,24,34,67]
+print(age)
+
+m1 = np.mean(age)
+print(m1)
+
+print ("\nMitali Vishwekar 41\n")
+t_test,p_value = ttest_1samp(age,30)
+print(p_value)
+
+print ("\nMitali Vishwekar 41\n")
+if p_value < 0.05:
+  print("We Reject the hypothesis")
+else:
+  print("We Accept the Hypothesis")
+
+from scipy.stats import ttest_1samp,ttest_ind
+import numpy as np
+
+sub_A = [13,12,11,11,10,9,11,12,12,15]
+sub_B = [10,12,12,11,10,8,11,14,11,11]
+print ("\nMitali Vishwekar 41\n")
+t_test,p_value = ttest_ind(sub_A,sub_B)
+print(p_value)
+
+alpha = 0.05
+print ("\nMitali Vishwekar 41\n")
+if p_value < alpha:
+  print("There is a significant Difference")
+else:
+  print("No Significant Difference")
