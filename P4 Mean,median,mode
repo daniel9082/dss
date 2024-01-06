@@ -1,0 +1,60 @@
+import statistics
+print ("\nDaniel Injeti 11\n")
+data = [1,2,3,4,5,6]
+m2 = statistics.mean(data)
+print("Mean:-",m2)
+m3 = statistics.median(data)
+print("Median:-",m3)
+m4 = statistics.mode(data)
+print("Mode:-",m4)
+
+import pandas as pd
+print ("\nDaniel Injeti 11\n")
+data = pd.read_csv('Employee.csv')
+print(data)
+
+print ("\nDaniel Injeti 11\n")
+print ("\nMean\n")
+print(data.mean())
+print ("\nMedian\n")
+print(data.median())
+print ("\nMode\n")
+print(data.mode())
+print ("\nVarience\n")
+print(data.var())
+print ("\nstandared deviation\n")
+print(data.std())
+
+import numpy as np
+#sample data
+data1 = np.array([10,12,15,18,20])
+data2 = np.array([5,8,9,12,14])
+print ("\nDaniel Injeti 11\n")
+#measure of dispersion
+range_data1 = np.ptp(data1)
+range_data2 = np.ptp(data2)
+#ptp is a per define value for range calculation
+print ("\nrange calculation\n")
+print(range_data1)
+print(range_data2)
+# calulate standared deviation
+print ("\nstandared deviation\n")
+std1 = np.std(data1)
+std2 = np.std(data2)
+print(std1)
+print(std2)
+# calcutate variance
+print ("\nvariance\n")
+var1 = np.var(data1)
+var2 = np.var(data2)
+print(var1)
+print(var2)
+# calculate co variance
+print ("\nco variance\n")
+c1 = np.cov(data1,data2)[0,1]
+print(c1)
+#co varance matrics
+print ("\nco varance matrics\n")
+D5 = np.array([data1,data2])
+D6 = np.cov(D5)
+print(D6)
