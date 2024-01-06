@@ -1,0 +1,22 @@
+import pandas as pd
+data = pd.read_csv("Data source")
+data.shape
+
+data.head(5)
+
+data.describe()
+
+data.info()
+
+data.isnull().sum()
+
+data['Column name'] = data['coln name'].fillna(method = "bfill")
+print(data['coln name'])
+
+data['Column name'] = data['coln name'].fillna(method = "ffill")
+print(data['coln name'])
+
+data['Column name'].fillna(data['coln name'].meean(),inplace = True)
+print(data['coln name'])
+
+data.isnull().sum()
