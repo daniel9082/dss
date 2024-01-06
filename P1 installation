@@ -1,0 +1,16 @@
+check java and python
+
+download spark from website click on step3
+it will give you a page click on first link
+
+download hadoop winutils from github
+
+set up environmetal variables as 
+SPARK_HOME spark path before bin
+HADOOP_HOME hadoop path before bin
+
+go to lower section of the encironmeral variables
+click on path write %HADOOP_HOME%\bin 
+now create same as hadoop
+
+for next steps refer spark cmd
