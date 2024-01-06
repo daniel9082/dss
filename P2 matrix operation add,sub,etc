@@ -1,0 +1,48 @@
+import numpy as np
+
+#Creating vector
+#Creating 1D numpy array
+print ("\nDaniel Injeti 11\n")
+v1 = np.array([1,2,3])
+print(v1)
+#CREATING MATRIXS
+m1 = np.array([[1,2],[3,4]])
+print(m1)
+
+# vector and matrics operation
+v2 = np.array([4,5,6])
+m2 = np.array([[4,5],[6,7]])
+
+r1 = v1 + v2
+r2 = m1 + m2
+print ("\nDaniel Injeti 11\n")
+print(r1)
+print(r2)
+
+#subraction
+r3 = v1 - v2
+r4 = m1 - m2
+print ("\nDaniel Injeti 11\n")
+print(r3)
+print(r4)
+
+#Dot product
+r5 = np.dot(v1,v2)
+r6 = np.dot(m1,m2)
+print ("\nDaniel Injeti 11\n")
+print(r5)
+print(r6)
+
+#Transpose of matrix
+t1 = m1.T
+print ("\nDaniel Injeti 11\n")
+print(t1)
+
+#Determinant and Inverse
+from numpy.linalg import inv,det
+
+inv1 = inv(m1)
+d1 = det(m1)
+print ("\nDaniel Injeti 11\n")
+print(inv1)
+print(d1)
